@@ -16,11 +16,31 @@ def cast():
     int(10.6)
     print "Funcion: "
 
-
-
 def main():
     sumaDos()
     division(10, 20)
+
+
+
+def cast():
+    lista=[1,2,3,"Hola",{"key1":"K","key2":"John"},(1,2,3)]
+    tupla=(1,2,3)
+    diccionario={"key1":"K","key2":"John","key3":"Peter"}
+
+    print "Lista"
+    for i in lista:
+        print i
+    lista.append("Hello")
+    print "Tupla"
+    for i in tupla:
+        print i
+    print "Diccionario"
+    for i in diccionario:
+        print i
+    for k,v in diccionario.items():
+        print "%s %s"%(k,v)
+
+
 
 class Estudiante(object):
     def __init__(self, nombre, edad):
@@ -69,6 +89,12 @@ def getWeb():
 
 def main():
     getWeb()
+
+
+def main():
+    cast()
+
+
 
 if __name__ == "__main__":
     main()
